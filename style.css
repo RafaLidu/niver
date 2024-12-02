@@ -1,0 +1,120 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: linear-gradient(90deg, #4e3629, #9c7f5f); /* Tons de Harry Potter */
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1563280530-15b498efb273?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg2MnwwfDF8c2VhY2h8Mnx8aGFycnlwb3R0ZXIlMjB0aGVtZSUyMHRoZSUyMHdpbmx8ZW58fDB8fHwgfA&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Harry Potter', sans-serif;
+}
+
+.countdown {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #f39c12;
+}
+
+.event-details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.cta {
+    background-color: #8e44ad; /* Cor roxa, relacionada à magia */
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #9b59b6;
+}
+
+/* Cartões de informações - Modificado para layout vertical */
+.info-cards {
+    padding: 20px;
+}
+
+.info-card {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Menos espaçamento entre os cartões */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info-card p {
+    font-size: 1.1em;
+    color: #ecf0f1;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #ecf0f1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 2.5em;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+    }
+
+    .info-cards {
+        padding: 10px;
+    }
+
+    .info-card {
+        width: 100%; /* Aumenta o cartão para a largura total */
+        margin-bottom: 20px;
+    }
+
+    .cta {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.3em;
+    }
+}
